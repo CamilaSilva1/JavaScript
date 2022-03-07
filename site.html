@@ -1,0 +1,39 @@
+<!DOCTYPE hmtl>
+
+<html lang="pt-br">
+
+	<head>
+			<meta charset="UTF-8"/>
+
+			<title> Treino 3 </title>
+
+			<script>
+
+			alert("Acenda a lâmpada");
+
+			var lampadaquebrada = false;
+
+			function mudaLampada(nome){
+
+				if(!lampadaquebrada){
+
+					document.getElementById("luz").src = nome + ".jpg";
+
+					if(nome=='quebrada'){
+
+						lampadaquebrada = true;
+					}
+				}
+			}
+
+			</script>
+
+	</head>
+
+	<body>
+
+		<img src="apagada.jpg" id="luz" onmousemove="mudaLampada('acesa')" onmouseout="mudaLampada('apagada')" onclick="mudaLampada('quebrada')" />
+
+	</body>
+
+</html>

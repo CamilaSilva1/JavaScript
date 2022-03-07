@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<title> Teste JavaScript </title>
+		<meta charset="UTF-8"/>
+
+	</head>
+
+	<body>
+
+		<h1> Testando JavaScrip </h1>
+		<h2> Comandos básicos </h2>
+
+		<script>
+
+			document.write("Hello World, hoje é dia " + Date());
+
+		</script>
+
+	</body>
+
+</html>
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<meta charset="UTF-8"/>
+
+		<title>
+
+			JavaScript com objetos
+
+		</title>
+
+		<script>
+
+			function acendeLampada() {
+
+				document.getElementById("luz").src ="acesa.png";
+			}
+
+			function apagaLampada() {
+
+				document.getElementById("luz").src ="desligada.png";
+			}
+
+			function lampadaQuebrada() {
+
+				document.getElementById("luz").src ="quebrada.jpg";
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<h1> Acenda a lâmpada </h1>
+		<img src="desligada.png" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="lampadaQuebrada()" />
+
+	</body>
+
+</html>
