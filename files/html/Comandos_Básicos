@@ -1,7 +1,11 @@
+<!-- Created by Camila Silva
+	 testing some commands in javascript with html  -->
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
 
+<!-- HEADER -->
 	<head>
 
 		<title> Teste JavaScript </title>
@@ -9,11 +13,13 @@
 
 	</head>
 
+	<!-- BODY -->
 	<body>
 
 		<h1> Testando JavaScrip </h1>
 		<h2> Comandos básicos </h2>
 
+		<!-- JAVASCRIPT -->
 		<script>
 
 			document.write("Hello World, hoje é dia " + Date());

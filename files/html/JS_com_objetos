@@ -1,0 +1,49 @@
+<!-- Created by Camila Silva
+	 This script is responsable by just for test to how to work javascript with html  -->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+		<!-- HEADER -->
+	<head>
+
+		<meta charset="UTF-8"/>
+
+		<title>
+
+			JavaScript com objetos
+
+		</title>
+
+				<!-- JAVASCRIPT -->
+		<script>
+
+			function acenderLampada() {
+
+				document.getElementById("luz").src ="../images/acesa.jpg";
+			}
+
+			function apagarLampada() {
+
+				document.getElementById("luz").src ="../images/desligada.jpg";
+			}
+
+			function lampadaQuebrada() {
+
+				document.getElementById("luz").src ="../images/quebrada.jpg";
+			}
+
+		</script>
+
+	</head>
+
+	<!-- BODY -->
+	<body>
+
+		<h1> Acenda a lâmpada </h1>
+		<img src="../images/desligada.jpg" id="luz" onmousemove="acenderLampada()" onmouseout="apagarLampada()" onclick="lampadaQuebrada()" />
+
+	</body>
+
+</html>

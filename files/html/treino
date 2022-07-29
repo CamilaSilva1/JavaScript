@@ -1,0 +1,46 @@
+<!-- Created by Camila Silva
+	 This script is responsable by just for test to how to work javascript with html  -->
+
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<!-- HEADER -->
+	<head>
+
+		<title> teste </title>
+
+		<!-- JAVASCRIPT -->
+		<script>
+
+		var quebrad = false;
+
+			function mudarEstadoLampada(tipo){
+
+				if (!quebrad){
+
+					document.getElementById("luz").src= tipo + ".jpg";
+
+					if(tipo == 'quebrada'){
+						quebrad = true;
+					}
+				}
+					
+			}
+
+
+		</script>
+
+	</head>
+
+	<!-- BODY -->
+	<body>
+
+		
+
+		<img src="apagada.jpg" id="luz" onmousemove="mudarEstadoLampada('acesa')" onmouseout="mudarEstadoLampada('apagada')" onclick="mudarEstadoLampada('quebrada')" />
+
+	</body>
+
+</html>
