@@ -1,27 +1,34 @@
+<!-- Created by Camila Silva
+     This script is responsable for turn on the lamp using javascript and html -->
+
+
 <!DOCTYPE hmtl>
 
 <html lang="pt-br">
 
+			<!--  HEADER	 -->
 	<head>
 			<meta charset="UTF-8"/>
 
 			<title> Treino 3 </title>
+		
 
+		<!-- 		JAVASCRIPT			 -->
 			<script>
 
 			alert("Acenda a lâmpada");
 
-			var lampadaquebrada = false;
+			var lampadaquebradaImg = false;
 
-			function mudaLampada(nome){
+			function mudarEstadoDaLampada(nome){
 
-				if(!lampadaquebrada){
+				if(!lampadaquebradaImg){
 
 					document.getElementById("luz").src = nome + ".jpg";
 
 					if(nome=='quebrada'){
 
-						lampadaquebrada = true;
+						lampadaquebradaImg = true;
 					}
 				}
 			}
@@ -29,10 +36,11 @@
 			</script>
 
 	</head>
-
+	
+		<!-- BODY -->
 	<body>
 
-		<img src="apagada.jpg" id="luz" onmousemove="mudaLampada('acesa')" onmouseout="mudaLampada('apagada')" onclick="mudaLampada('quebrada')" />
+		<img src="apagada.jpg" id="luz" onmousemove="mudarEstadoDaLampada('acesa')" onmouseout="mudarEstadoDaLampada('apagada')" onclick="mudarEstadoDaLampada('quebrada')" />
 
 	</body>
 
