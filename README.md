@@ -1,5 +1,5 @@
 # JavaScript
-Desenvolvi alguns projetos para estudo de JavaScript
+Alguns projetos desenvolvidos para estudo de JavaScript
 
 
 
